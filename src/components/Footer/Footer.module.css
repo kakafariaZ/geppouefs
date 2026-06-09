@@ -1,0 +1,177 @@
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding-top: var(--space-16);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.6fr;
+  gap: var(--space-8);
+  padding-bottom: var(--space-10);
+}
+
+/* ---- Brand ---- */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.logoBemVindo {
+  display: block;
+  font-size: 0.6rem;
+  opacity: 0.75;
+  letter-spacing: 0.06em;
+}
+
+.logoName {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.brandDesc {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 240px;
+}
+
+.socials {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.socialLink {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  transition: background var(--transition-base);
+}
+
+.socialLink:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ---- Link Groups ---- */
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.groupTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: var(--space-2);
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footerLink {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+  display: inline-block;
+}
+
+.footerLink:hover {
+  color: var(--color-white);
+  padding-left: 4px;
+}
+
+/* ---- Contact ---- */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contactList svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  opacity: 0.75;
+}
+
+.contactLink {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  transition: color var(--transition-fast);
+}
+
+a.contactLink:hover {
+  color: var(--color-white);
+}
+
+/* ---- Bottom Bar ---- */
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: var(--space-4) 0;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 540px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .brand {
+    grid-column: auto;
+  }
+}
