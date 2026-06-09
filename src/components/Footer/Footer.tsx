@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { FOOTER_SECTIONS, CONTACT_INFO, SOCIAL_LINKS } from '../../data/content';
 import styles from './Footer.module.css';
+import logo from '/public/logogeppo.svg';
 
 // Simple social icons as SVG inline
 const InstagramIcon = () => (
@@ -36,12 +37,7 @@ const Footer = () => {
         {/* Brand Column */}
         <div className={styles.brand}>
           <div className={styles.logoWrap}>
-            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <circle cx="16" cy="16" r="15" stroke="white" strokeWidth="1.5" />
-              <path d="M10 10 Q16 6 22 10 Q26 16 22 22 Q16 26 10 22 Q6 16 10 10Z" fill="white" opacity="0.2" />
-              <circle cx="16" cy="16" r="4" fill="white" />
-              <path d="M16 8 L16 12 M16 20 L16 24 M8 16 L12 16 M20 16 L24 16" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
+            <img src={logo} alt="Logo Poéticas Orais" className={styles.logo} />
             <div>
               <span className={styles.logoBemVindo}>bem vindo ao</span>
               <span className={styles.logoName}>poéticas orais</span>
@@ -111,7 +107,7 @@ const Footer = () => {
       <div className={styles.bottomBar}>
         <div className="container">
           <p className={styles.copyright}>
-            © 2024 Poéticas Orais. Todos os direitos reservados.
+            © 2026 Poéticas Orais. Todos os direitos reservados.
           </p>
         </div>
       </div>

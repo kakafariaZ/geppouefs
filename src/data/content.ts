@@ -57,10 +57,10 @@ export const EVENTS_DATA: Event[] = [
 
 export const FEATURED_EVENT = {
   badge: 'DESTAQUE',
-  title: 'Roda dé',
-  titleHighlight: 'Poesia &',
-  titleEnd: 'Saberes',
-  tagline: 'Um encontro para ouvir, compartilhar e celebrar a palavra que transforma.',
+  title: 'Rede',
+  titleHighlight: 'moinho ',
+  titleEnd: 'de Saberes',
+  tagline: 'Um encontro para ouvir, compartilhar e celebrar a palavra que vem da voz.',
   description: 'Venha vivenciar histórias, cantos e rimas que mantêm vivas nossas raízes e inspiram novos caminhos.',
   cta: 'Quero participar',
 };
@@ -141,7 +141,7 @@ export const FOOTER_SECTIONS: FooterSection[] = [
 export const CONTACT_INFO = {
   phone: '(71) 99999-9999',
   email: 'contato@poeticasorais.org.br',
-  address: 'Rua das Palavras, 123, Itapuã, Salvador – BA',
+  address: 'Prédio da Pós - UEFS - Feira de Santana, BA',
 };
 
 export const SOCIAL_LINKS = {

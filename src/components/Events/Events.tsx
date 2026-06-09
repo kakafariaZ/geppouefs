@@ -10,7 +10,7 @@ const Events = () => {
         {/* Header */}
         <div className="section-header">
           <div>
-            <h2 className="section-title">Eventos</h2>
+            <h2 className="section-title">AGENDA</h2>
             <p className="section-subtitle">
               Participe dos encontros, rodas de conversa, oficinas e apresentações.
             </p>
@@ -64,7 +64,7 @@ const Events = () => {
             </span>
 
             <div className={styles.featuredVisual}>
-              {/* Decorative spiral pattern */}
+              {/* Imagem do evento em destaque */}
               <div className={styles.imgContainer}>
                 <img
                   src={EVENTIMG}
@@ -76,9 +76,8 @@ const Events = () => {
 
             <div className={styles.featuredContent}>
               <h3 className={styles.featuredTitle}>
-                {FEATURED_EVENT.title}{' '}
+                {FEATURED_EVENT.title}{''}
                 <em className={styles.featuredHighlight}>{FEATURED_EVENT.titleHighlight}</em>
-                <br />
                 {FEATURED_EVENT.titleEnd}
               </h3>
 
